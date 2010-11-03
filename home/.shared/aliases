@@ -1,0 +1,97 @@
+########################################################
+# 					Useful aliases
+########################################################
+alias ls='ls $LS_OPTIONS -GphF'
+alias ll='ls $LS_OPTIONS -lGphF'
+alias l='ls $LS_OPTIONS -AlGphF'
+alias cd..="cd .."
+alias c="clear"
+alias e="exit"
+alias ssh="ssh -X"
+alias ..="cd .."
+alias sucksite="wget -r -k -np"
+
+# Shell
+alias ls="ls -aF"
+alias la="ls -lahF"
+alias pubkey="cat ~/.ssh/id_rsa.pub"
+
+# Git
+alias g="git"
+alias gcln="git clone"
+alias gpul="git pull"
+alias glog="git log"
+alias gdif="git diff"
+alias gche="git checkout"
+alias gsta="git status"
+alias gbra="git branch"
+alias gadd="git add . "
+alias gcom="git commit -a -m"
+alias gpus="git push"
+alias gmer="git merge"
+
+alias gad="gadd"
+alias gadd.="gadd"
+alias gpull="gpul"
+alias gdiff="gdif"
+alias gtsa="gsta"
+alias gpush="gpus"
+alias gpuso="gpus origin"
+alias gpusom="gpuso master"
+alias gpusod="gpuso develop"
+alias gpulo="gpul origin"
+alias gpulom="gpulo master"
+alias gpulod="gpulo develop"
+alias gchem="git checkout master"
+alias gmerm="git merge master"
+
+# Mate
+alias m="mate"
+
+alias m.="m ."
+alias m,="m."
+
+#MVim
+alias v="mvim"
+
+alias v.="v ."
+alias v,="v."
+
+# RVM
+alias 1.9="rvm ruby-1.9 && ruby -v"
+alias 1.8="rvm system && ruby -v"
+
+alias 19="1.9"
+alias 18="1.8"
+
+# Rails
+alias ss="script/server"
+alias sc="script/console"
+alias sg="script/generate"
+
+alias rs="rails server"
+alias rc="rails console"
+alias rg="rails generate"
+
+alias sgco="sg controller"
+alias sgmo="sg model"
+alias sgmi="sg migration"
+
+# Rake
+alias r="rake"
+alias rdbm="r db:migrate"
+
+# Ruby
+alias rb="ruby"
+
+# Jekyll
+alias j="jekyll"
+alias js="j --server --auto --pygments"
+
+# Locations
+alias 80="cd ~/80beans"
+alias os="cd ~/opensource"
+alias op="os"
+
+# Apps
+alias chrome="open /Applications/Google\ Chrome.app"
