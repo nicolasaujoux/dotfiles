@@ -44,8 +44,13 @@ endif
 
 " Define color scheme to use
 " colorscheme railscasts
-colorscheme Monokai
-set gfn=Bitsteam\ Vera\ Sans\ Mono\ 12 	" Use the Bitstream font
+syntax enable
+set background=dark
+colorscheme solarized
+
+
+set gfn=Menlo:h12
+set shell=/bin/bash
 
 
 
