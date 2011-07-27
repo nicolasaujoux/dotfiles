@@ -1,0 +1,14 @@
+[user]
+  name =  Bertrand Cachet
+  email = bertrand.cachet@mobilenuggets.com
+[github]
+	user =  bcachet
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[core]
+	excludesfile = /Users/bertrand/.gitignore
+[alias]
+	info = /usr/local/git/bin/git-info
+	pager = /usr/local/git/bin/git-pager
