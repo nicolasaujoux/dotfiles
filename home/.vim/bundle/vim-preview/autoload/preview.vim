@@ -212,6 +212,7 @@ class Preview
     <<-END_OF_HTML
       <html>
         <head>
+          <meta charset="UTF-8">
           <title>#{@base_name}</title>
           #{css_tag}
           #{base_tag}
