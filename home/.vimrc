@@ -73,6 +73,10 @@
 	set tabpagemax=15 				" only show 15 tabs
 	set showmode                   	" display the current mode
 	set gfn=Menlo:h12				" use Menlo font
+    set columns=80
+    " Use modeline overrides
+    set modeline
+    set modelines=10
 
 	set cursorline  				" highlight current line
 	hi cursorline guibg=#333333 	" highlight bg color of current line
@@ -115,7 +119,7 @@
 	set foldenable  				" auto fold code
 	set gdefault					" the /g flag on :s substitutions by default
     set list
-    set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
+    set listchars=tab:..,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
 
 " }
@@ -127,6 +131,7 @@
 	set expandtab 	  	     		" tabs are spaces, not tabs
 	set tabstop=4 					" an indentation every four columns
 	set softtabstop=4 				" let backspace delete indent
+    set textwidth=79
 	"set matchpairs+=<:>            	" match, to be used with % 
 	set pastetoggle=<F12>          	" pastetoggle (sane indentation on pastes)
 	"set comments=sl:/*,mb:*,elx:*/  " auto format comment blocks
@@ -204,9 +209,47 @@
 		
 	" For when you forget to sudo.. Really Write the file.
 	cmap w!! w !sudo tee % >/dev/null
+
+    map <leader>p :Hammer<CR>
 " }
 
 " Plugins {
+    " Wrapping {
+    function s:setupWrapping()
+        set wrap
+        set wrapmargin=2
+        set textwidth=72
+        set fo=want
+    endfunction
+
+    function s:setupMarkup()
+        call s:setupWrapping()
+        map <buffer> <Leader>p :Hammer<CR>
+    endfunction
+
+    " make uses real tabs
+    au FileType make set noexpandtab
+
+    " Restructured Text, md, markdown, and mk are markdown and define buffer-local preview
+    au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
+
+    " add json syntax highlighting
+    au BufNewFile,BufRead *.json set ft=javascript
+
+    au BufRead,BufNewFile *.{txt,rst} call s:setupWrapping()
+
+    " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
+    au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79 autoindent
+
+    au FileType c,cpp,h,hpp,m,mm,ruby set softtabstop=2 tabstop=2 shiftwidth=2 textwidth=79 autoindent
+
+    " allow backspacing over everything in insert mode
+    set backspace=indent,eol,start
+
+    " load the plugin and indent settings for the detected filetype
+    filetype plugin indent on
+    " }
+    
 
 	" VCSCommand {
 "		let b:VCSCommandMapPrefix=',v'
