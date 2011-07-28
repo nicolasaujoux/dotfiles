@@ -131,9 +131,32 @@ set modelines=10
 color solarized
 
 " Directories for swp files
-set backupdir=/tmp/vimbackup
-set directory=/tmp/vimswap
-set viewdir=/tmp/vimviews
+function! InitializeDirectories()
+  let separator = "."
+  let parent = "/tmp/"
+  let prefix = 'vim'
+  let dir_list = { 
+			  \ 'backup': 'backupdir', 
+			  \ 'views': 'viewdir', 
+			  \ 'swap': 'directory' }
+
+  for [dirname, settingname] in items(dir_list)
+	  let directory = parent . '/' . prefix . dirname . "/"
+	  if exists("*mkdir")
+		  if !isdirectory(directory)
+			  call mkdir(directory)
+		  endif
+	  endif
+	  if !isdirectory(directory)
+		  echo "Warning: Unable to create backup directory: " . directory
+		  echo "Try: mkdir -p " . directory
+	  else  
+          let directory = substitute(directory, " ", "\\\\ ", "")
+          exec "set " . settingname . "=" . directory
+	  endif
+  endfor
+endfunction
+call InitializeDirectories() 
 
 " Turn off jslint errors by default
 let g:JSLintHighlightErrorLine = 0
@@ -146,6 +169,11 @@ runtime! macros/matchit.vim
 
 " Show (partial) command in the status line
 set showcmd
+
+let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+
+map T :TaskList<CR>
+map P :TlistToggle<CR>
 
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
