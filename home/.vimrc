@@ -130,6 +130,10 @@ set modelines=10
 " Default color scheme
 color solarized
 
+" Window Size
+set lines=60
+set columns=80
+
 " Directories for swp files
 function! InitializeDirectories()
   let separator = "."

@@ -71,6 +71,10 @@ set guioptions-=T
 " Default gui color scheme
 color solarized
 
+" Hide scrollbard
+set guioptions+=lrb
+set guioptions-=lrb
+
 " ConqueTerm wrapper
 function StartTerm()
   execute 'ConqueTerm ' . $SHELL . ' --login'
