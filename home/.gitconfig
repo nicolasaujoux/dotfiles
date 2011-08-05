@@ -1,6 +1,6 @@
 [user]
-  name =  Bertrand Cachet
-  email = bertrand.cachet@mobilenuggets.com
+	name = Bertrand Cachet
+	email = bertrand.cachet@mobilenuggets.com
 [github]
 	user =  bcachet
 [color]
@@ -12,3 +12,9 @@
 [alias]
 	info = /usr/local/git/bin/git-info
 	pager = /usr/local/git/bin/git-pager
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope

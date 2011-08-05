@@ -33,6 +33,9 @@ set laststatus=2
 " This is likely a bludgeon to solve some other issue, but it works
 set noequalalways
 
+" Map LEADER key to ,
+let mapleader = ','
+
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
@@ -128,11 +131,19 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color solarized
+syntax enable
+set background=dark
+colorscheme solarized
 
 " Window Size
 set lines=60
-set columns=80
+set columns=95
+
+" Transparency
+set transparency=1
+
+" Define FONT
+set guifont=Menlo:h12
 
 " Directories for swp files
 function! InitializeDirectories()
