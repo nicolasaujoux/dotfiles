@@ -136,7 +136,7 @@ set background=dark
 colorscheme solarized
 
 " Window Size
-set lines=60
+set lines=55
 set columns=95
 
 " Transparency
