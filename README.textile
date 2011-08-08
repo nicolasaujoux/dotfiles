@@ -4,6 +4,7 @@ My VIM, Git and .bashrc configurations using Homesick
 Install with the following commands:
 <pre>
 <code>
+gem install homesick
 homesick clone bcachet/dotfiles
 homesick symlink dotfiles
 </code>
