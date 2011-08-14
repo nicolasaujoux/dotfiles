@@ -187,8 +187,8 @@ set showcmd
 
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 
-map T :TaskList<CR>
-map P :TlistToggle<CR>
+map <leader>T :TaskList<CR>
+map <leader>P :TlistToggle<CR>
 
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
