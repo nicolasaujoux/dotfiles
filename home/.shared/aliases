@@ -46,5 +46,10 @@ alias gmerm="git merge master"
 alias j="jekyll"
 alias js="j --server --auto --pygments"
 
+# Blogging
+alias blog="workon blog && foreman start"
+
 # Apps
 alias chrome="open /Applications/Google\ Chrome.app"
+
+alias t='/usr/local/bin/python /usr/local/bin/t.py --task-dir ~/.tasks --list tasks'

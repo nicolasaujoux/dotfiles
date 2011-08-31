@@ -60,7 +60,7 @@ function s:setupWrapping()
   set wrap
   set wrapmargin=2
   set textwidth=72
-  set fo=want
+"  set fo=want
 endfunction
 
 function s:setupMarkup()
@@ -80,7 +80,7 @@ au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
 
-au BufRead,BufNewFile *.{rst,txt} call s:setupWrapping()
+au BufRead,BufNewFile *.{txt} call s:setupWrapping()
 
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
@@ -143,7 +143,7 @@ set columns=95
 set transparency=1
 
 " Define FONT
-set guifont=Menlo:h12
+set guifont=Mensch:h12
 
 " Directories for swp files
 function! InitializeDirectories()
@@ -194,3 +194,6 @@ map <leader>P :TlistToggle<CR>
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+source ~/.vim/abbreviations
+
