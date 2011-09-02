@@ -70,7 +70,8 @@ set visualbell
 set guioptions-=T
 
 " Default gui color scheme
-color solarized
+" color solarized
+color Tomorrow-night
 
 " Transparency
 set transparency=1

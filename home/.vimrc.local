@@ -1,1 +1,4 @@
 source ~/.vim/abbreviations
+
+
+au BufRead,BufNewFile *.{r}    set ft=c

@@ -30,8 +30,9 @@ set modelines=10
 
 " Default color scheme
 syntax enable
-set background=dark
-colorscheme solarized
+" set background=dark
+" colorscheme solarized
+colorscheme Tomorrow-Night
 
 " Window Size
 set lines=55
