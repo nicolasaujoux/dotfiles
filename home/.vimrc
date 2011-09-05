@@ -47,6 +47,10 @@ set showcmd
 " Pathogen
 call pathogen#infect()
 
+" Command-T
+set wildignore+=*.o,*.obj,.git,*.pyc
+let g:CommandTMaxHeight = 15
+
 " Directories for swp files
 function! InitializeDirectories()
   let separator = "."
