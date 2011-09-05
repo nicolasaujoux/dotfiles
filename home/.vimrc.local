@@ -2,3 +2,6 @@ source ~/.vim/abbreviations
 
 
 au BufRead,BufNewFile *.{r}    set ft=c
+
+let @t="0^wvwhywwi{% trans \"/\<\\/\"\>i\" %}0"
+let @t="0^wv/\[ \>\]hy/\>a{% trans \"/\<\\/\"\>i\" %}0"
