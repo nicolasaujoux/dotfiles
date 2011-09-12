@@ -40,6 +40,7 @@ set columns=95
 
 " Define FONT
 set guifont=Mensch:h12
+" set guifont=Inconsolata:h14
 
 " Show (partial) command in the status line
 set showcmd
