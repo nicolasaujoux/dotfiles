@@ -52,6 +52,41 @@ call pathogen#infect()
 set wildignore+=*.o,*.obj,.git,*.pyc
 let g:CommandTMaxHeight = 15
 
+" Line Width
+autocmd FileType rst,txt,md setlocal tw=79
+
+" Marker support
+:nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
+
+" Status line {{{
+
+set statusline=%f    " Path.
+set statusline+=%m   " Modified flag.
+set statusline+=%r   " Readonly flag.
+set statusline+=%w   " Preview window flag.
+
+set statusline+=\    " Space.
+
+set statusline+=%#warningmsg#                " Highlight the following as a warning.
+set statusline+=%{SyntasticStatuslineFlag()} " Syntastic errors.
+set statusline+=%*                           " Reset highlighting.
+
+set statusline+=%=   " Right align.
+
+" File format, encoding and type.  Ex: "(unix/utf-8/python)"
+set statusline+=(
+set statusline+=%{&ff}                        " Format (unix/DOS).
+set statusline+=/
+set statusline+=%{strlen(&fenc)?&fenc:&enc}   " Encoding (utf-8).
+set statusline+=/
+set statusline+=%{&ft}                        " Type (python).
+set statusline+=)
+
+" Line and column position and counts.
+set statusline+=\ (line\ %l\/%L,\ col\ %03c)
+
+" }}}
+
 " Directories for swp files
 function! InitializeDirectories()
   let separator = "."
