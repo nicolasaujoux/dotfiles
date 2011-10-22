@@ -40,8 +40,6 @@ prompt
 
 export PATH="/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin"
 
-export PATH=$PATH:"/Android/tools"
-export PATH=$PATH:"/Android/platform-tools"
 
 source /usr/local/share/python/virtualenvwrapper.sh # This load virtualenv into a shell session
 
@@ -54,3 +52,4 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 export EDITOR="/usr/bin/vim" 
+
