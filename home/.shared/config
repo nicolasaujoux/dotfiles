@@ -53,4 +53,8 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-export EDITOR="/usr/bin/vim" 
+export EDITOR="/usr/bin/vim"
+
+
+export PATH=/var/lib/gems/1.8/bin:$PATH
+

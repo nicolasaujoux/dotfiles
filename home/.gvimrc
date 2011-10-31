@@ -71,10 +71,18 @@ set guioptions-=T
 
 " Default gui color scheme
 " color solarized
-color Tomorrow-night
+color Tomorrow-Night
 
+if has("gui_gtk2")
+    set guifont=Inconsolata\ 11
+    set lines=60
+elseif has("gui_macvim")
+    set guifont=Inconsolata:h12
+elseif has("gui_win32")
+    set guifont=Inconsolata:h11
+end
 " Transparency
-set transparency=1
+" set transparency=1
 
 " Hide scrollbard
 set guioptions+=lrb
@@ -84,3 +92,4 @@ set guioptions-=lrb
 if filereadable(expand("~/.gvimrc.local"))
   source ~/.gvimrc.local
 endif
+
