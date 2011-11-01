@@ -1,6 +1,6 @@
 [user]
 	name = Bertrand Cachet
-	email = bertrand.cachet@mobilenuggets.com
+	email = bertrand.cachet@heig-vd.ch
 [github]
 	user =  bcachet
 [color]
@@ -9,6 +9,7 @@
 	status = auto
 [core]
 	excludesfile = /Users/bertrand/.gitignore
+	editor = vim
 [alias]
 	info = /usr/local/git/bin/git-info
 	pager = /usr/local/git/bin/git-pager
@@ -18,3 +19,7 @@
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 700x550+956+56
+	main-window-view = HistoryView

@@ -35,12 +35,12 @@ syntax enable
 colorscheme Tomorrow-Night
 
 " Window Size
-set lines=55
+" set lines=55
 set columns=95
 
 " Define FONT
-set guifont=Mensch:h12
-" set guifont=Inconsolata:h14
+"set guifont=Mensch:h12
+set guifont=Inconsolata:h12
 
 " Show (partial) command in the status line
 set showcmd
@@ -54,6 +54,9 @@ let g:CommandTMaxHeight = 15
 
 " Line Width
 autocmd FileType rst,txt,md setlocal tw=79
+
+" Do not touch tabs in Makefile
+autocmd FileType make setlocal noexpandtab
 
 " Marker support
 :nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
@@ -90,7 +93,7 @@ set statusline+=\ (line\ %l\/%L,\ col\ %03c)
 " Directories for swp files
 function! InitializeDirectories()
   let separator = "."
-  let parent = "/tmp/"
+  let parent = "/home/bcachet/.tmp"
   let prefix = 'vim'
   let dir_list = { 
 			  \ 'backup': 'backupdir', 
