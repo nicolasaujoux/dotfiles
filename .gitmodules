@@ -25,3 +25,6 @@
 [submodule "home/.vim/bundle/ctrlp"]
 	path = home/.vim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim
+[submodule "home/.vim/bundle/preview"]
+	path = home/.vim/bundle/preview
+	url = https://github.com/bcachet/vim-preview.git
