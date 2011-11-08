@@ -71,7 +71,9 @@ set guioptions-=T
 
 " Default gui color scheme
 " color solarized
-color Tomorrow-Night
+" color Tomorrow-Night
+" color molokai
+color vimbrant
 
 if has("gui_gtk2")
     set guifont=Inconsolata\ 11
