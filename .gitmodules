@@ -40,3 +40,6 @@
 [submodule "home/.vim/bundle/rspec"]
 	path = home/.vim/bundle/rspec
 	url = git://github.com/taq/vim-rspec.git
+[submodule "home/.vim/bundle/ruby"]
+	path = home/.vim/bundle/ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
