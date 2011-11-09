@@ -40,3 +40,6 @@
 [submodule "home/.vim/bundle/ruby"]
 	path = home/.vim/bundle/ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "home/.vim/bundle/preview"]
+	path = home/.vim/bundle/preview
+	url = https://github.com/greyblake/vim-preview.git
