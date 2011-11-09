@@ -58,3 +58,6 @@ alias blog="workon blog && foreman start"
 # Apps
 alias chrome="open /Applications/Google\ Chrome.app"
 
+# GVIM
+# Fix problem with GVim not registering with Ubuntu Menu
+gvim() { /usr/bin/gvim -f "$@" & true; }
