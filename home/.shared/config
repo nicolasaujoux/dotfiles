@@ -38,21 +38,14 @@ PS4='+ '
 }
 prompt
 
-export PATH="/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin"
-
-
-source /usr/local/share/python/virtualenvwrapper.sh # This load virtualenv into a shell session
-
-# RBENV
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
-
 export EDITOR="/usr/bin/vim"
 
 
-export PATH=/var/lib/gems/1.8/bin:$PATH
+os=`uname -s`
+case $os in
+    "Darwin" )
+        source ~/.bashrc.mac;;
+    "Linux"  )
+        source ~/.bashrc.linux;;
+esac
 
