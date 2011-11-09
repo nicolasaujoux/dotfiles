@@ -58,8 +58,9 @@ autocmd FileType rst,txt,md setlocal tw=79
 " Do not touch tabs in Makefile
 autocmd FileType make setlocal noexpandtab
 
-" Marker support
-:nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
+" Gundo mapping
+nnoremap <F5> :GundoToggle<CR>
+
 
 " Status line {{{
 

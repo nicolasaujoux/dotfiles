@@ -4,9 +4,9 @@
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto -GphF'
-    alias ll='ls --color=auto -lGphF'
-    alias l='ls --color=auto -AlGphf'
+    alias ls='ls --color=auto -phF'
+    alias ll='ls --color=auto -lphF'
+    alias l='ls --color=auto -Alphf'
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'

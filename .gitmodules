@@ -28,3 +28,6 @@
 [submodule "home/.vim/bundle/preview"]
 	path = home/.vim/bundle/preview
 	url = https://github.com/bcachet/vim-preview.git
+[submodule "home/.vim/bundle/gundo"]
+	path = home/.vim/bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
