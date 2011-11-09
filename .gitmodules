@@ -31,3 +31,18 @@
 [submodule "home/.vim/bundle/gundo"]
 	path = home/.vim/bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
+[submodule "home/.vim/bundle/rails"]
+	path = home/.vim/bundle/rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "home/.vim/bundle/cucumber"]
+	path = home/.vim/bundle/cucumber
+	url = git://github.com/tpope/vim-cucumber.git
+[submodule "home/.vim/bundle/javascript"]
+	path = home/.vim/bundle/javascript
+	url = git://github.com/pangloss/vim-javascript.git
+[submodule "home/.vim/bundle/rspec"]
+	path = home/.vim/bundle/rspec
+	url = git://github.com/taq/vim-rspec.git
+[submodule "home/.vim/bundle/ruby"]
+	path = home/.vim/bundle/ruby
+	url = https://github.com/vim-ruby/vim-ruby.git

@@ -32,7 +32,7 @@ function prompt {
     ;;
   esac
 
-PS1="$LIGHT_GRAY[$LIGHT_RED\u$LIGHT_GRAY:$LIGHT_BLUE\w$YELLOW\$(ps_scm_f)$LIGHT_GRAY]$NO_COLOUR\$"
+PS1="$LIGHT_GRAY[$LIGHT_RED\u$LIGHT_GRAY:$LIGHT_BLUE\w$YELLOW\$(ps_scm_f)$LIGHT_GRAY]\$$NO_COLOUR"
 PS2='> '
 PS4='+ '
 }

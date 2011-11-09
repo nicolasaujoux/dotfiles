@@ -32,7 +32,9 @@ set modelines=10
 syntax enable
 " set background=dark
 " colorscheme solarized
-colorscheme Tomorrow-Night
+" colorscheme Tomorrow-Night
+" colorscheme molokai
+colorscheme vimbrant
 
 " Window Size
 " set lines=55
@@ -94,7 +96,7 @@ set statusline+=\ (line\ %l\/%L,\ col\ %03c)
 " Directories for swp files
 function! InitializeDirectories()
   let separator = "."
-  let parent = "/home/bcachet/.tmp"
+  let parent = "/tmp"
   let prefix = 'vim'
   let dir_list = { 
 			  \ 'backup': 'backupdir', 
