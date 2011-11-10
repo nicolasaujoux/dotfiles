@@ -30,11 +30,10 @@ set modelines=10
 
 " Default color scheme
 syntax enable
-" set background=dark
+set background=dark
 " colorscheme solarized
 " colorscheme Tomorrow-Night
-" colorscheme molokai
-colorscheme vimbrant
+colorscheme molokai
 
 " Window Size
 " set lines=55
