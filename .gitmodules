@@ -43,3 +43,6 @@
 [submodule "home/.vim/bundle/preview"]
 	path = home/.vim/bundle/preview
 	url = https://github.com/greyblake/vim-preview.git
+[submodule "home/.vim/bundle/commentary"]
+	path = home/.vim/bundle/commentary
+	url = https://github.com/tpope/vim-commentary.git
