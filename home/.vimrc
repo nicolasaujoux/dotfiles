@@ -12,10 +12,7 @@ set encoding=utf-8
 
 " Whitespace stuff
 set nowrap
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
+set autoindent
 set list listchars=tab:\ \ ,trail:·
 
 " Searching
@@ -58,6 +55,47 @@ autocmd FileType rst,txt,md setlocal tw=79
 
 " Do not touch tabs in Makefile
 autocmd FileType make setlocal noexpandtab
+
+" TABS/SPACES for different filetype
+autocmd BufEnter *.py set ai sw=4 ts=4 sta et fo=croql
+
+autocmd FileType c,cpp,objc,java,php,javascript
+    \    setlocal formatoptions=croql cindent
+    \    comments=sr:/*,mb:*,ex:*/,://
+    \    expandtab
+    \    shiftwidth=4
+    \    tabstop=4
+    \    softtabstop=4
+
+autocmd FileType ruby
+    \    setlocal expandtab
+    \    shiftwidth=2
+    \    tabstop=2
+    \    softtabstop=2
+    
+    autocmd BufEnter *.yml
+    \    setlocal expandtab
+    \    shiftwidth=2
+    \    tabstop=2
+    \    softtabstop=2
+    
+    autocmd FileType xml
+    \    setlocal expandtab
+    \    shiftwidth=4
+    \    tabstop=4
+    \    softtabstop=4
+    
+    autocmd FileType html
+    \    setlocal expandtab
+    \    shiftwidth=4
+    \    tabstop=4
+    \    softtabstop=4
+    
+    autocmd BufEnter *.css
+    \    setlocal expandtab
+    \    shiftwidth=4
+    \    tabstop=4
+    \    softtabstop=4
 
 " Gundo mapping
 nnoremap <F5> :GundoToggle<CR>
@@ -122,7 +160,7 @@ call InitializeDirectories()
 
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
-
+command W w !sudo tee % > /dev/null
 
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))

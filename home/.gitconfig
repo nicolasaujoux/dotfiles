@@ -23,3 +23,9 @@
 	main-window-maximized = false
 	main-window-geometry = 700x550+956+56
 	main-window-view = HistoryView
+[sendemail]
+	smtpserver = smtp.heig-vd.ch
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = einet\\bertrand.cachet
+	smtppass = H8vt3qq9

@@ -46,3 +46,9 @@
 [submodule "home/.vim/bundle/commentary"]
 	path = home/.vim/bundle/commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "home/.vim/bundle/doxygen"]
+	path = home/.vim/bundle/doxygen
+	url = https://github.com/vim-scripts/doxygen-support.vim.git
+[submodule "home/.vim/bundle/cvim"]
+	path = home/.vim/bundle/cvim
+	url = https://github.com/vim-scripts/c.vim.git
