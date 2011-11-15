@@ -53,16 +53,23 @@ let g:CommandTMaxHeight = 15
 " Line Width
 autocmd FileType rst,txt,md setlocal tw=79
 
+
+" TABS/SPACES for different filetype
+set sw=4
+set st=4
+set ts=4
+set noexpandtab
+
 " Do not touch tabs in Makefile
 autocmd FileType make setlocal noexpandtab
 
-" TABS/SPACES for different filetype
 autocmd BufEnter *.py set ai sw=4 ts=4 sta et fo=croql
+
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 autocmd FileType c,cpp,objc,java,php,javascript
     \    setlocal formatoptions=croql cindent
     \    comments=sr:/*,mb:*,ex:*/,://
-    \    expandtab
     \    shiftwidth=4
     \    tabstop=4
     \    softtabstop=4
