@@ -65,8 +65,6 @@ autocmd FileType make setlocal noexpandtab
 
 autocmd BufEnter *.py set ai sw=4 ts=4 sta et fo=croql
 
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
 autocmd FileType c,cpp,objc,java,php,javascript
     \    setlocal formatoptions=croql cindent
     \    comments=sr:/*,mb:*,ex:*/,://
