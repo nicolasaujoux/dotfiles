@@ -10,6 +10,7 @@
 [core]
 	excludesfile = /Users/bertrand/.gitignore
 	editor = vim
+	quotepath = false
 [alias]
 	info = /usr/local/git/bin/git-info
 	pager = /usr/local/git/bin/git-pager

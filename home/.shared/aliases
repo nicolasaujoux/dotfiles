@@ -14,8 +14,10 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-alias ll='ls -alF'
-alias la='ls -A'
+alias ll='ls -l'
+alias la='ls -a'
+alias lt='ls -lt'
+alias lx='ls -lXB'
 alias l='ls -CF'
 
 alias cd..="cd .."
