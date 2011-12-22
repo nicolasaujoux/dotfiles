@@ -49,3 +49,6 @@
 [submodule "home/.vim/bundle/cvim"]
 	path = home/.vim/bundle/cvim
 	url = https://github.com/vim-scripts/c.vim.git
+[submodule "home/.vim/bundle/clang_complete"]
+	path = home/.vim/bundle/clang_complete
+	url = https://github.com/exclipy/clang_complete.git
