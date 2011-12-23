@@ -4,18 +4,6 @@
 [submodule "home/.vim/bundle/snipmate"]
 	path = home/.vim/bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
-[submodule "home/.vim/bundle/fugitive"]
-	path = home/.vim/bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule "home/.vim/bundle/zencoding"]
-	path = home/.vim/bundle/zencoding
-	url = https://github.com/mattn/zencoding-vim.git
-[submodule "home/.vim/bundle/haml"]
-	path = home/.vim/bundle/haml
-	url = https://github.com/tpope/vim-haml.git
-[submodule "home/.vim/bundle/surround"]
-	path = home/.vim/bundle/surround
-	url = https://github.com/tpope/vim-surround.git
 [submodule "home/.vim/bundle/command-t"]
 	path = home/.vim/bundle/command-t
 	url = https://github.com/wincent/Command-T.git
@@ -25,27 +13,3 @@
 [submodule "home/.vim/bundle/gundo"]
 	path = home/.vim/bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
-[submodule "home/.vim/bundle/rails"]
-	path = home/.vim/bundle/rails
-	url = https://github.com/tpope/vim-rails.git
-[submodule "home/.vim/bundle/cucumber"]
-	path = home/.vim/bundle/cucumber
-	url = git://github.com/tpope/vim-cucumber.git
-[submodule "home/.vim/bundle/javascript"]
-	path = home/.vim/bundle/javascript
-	url = git://github.com/pangloss/vim-javascript.git
-[submodule "home/.vim/bundle/rspec"]
-	path = home/.vim/bundle/rspec
-	url = git://github.com/taq/vim-rspec.git
-[submodule "home/.vim/bundle/ruby"]
-	path = home/.vim/bundle/ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "home/.vim/bundle/preview"]
-	path = home/.vim/bundle/preview
-	url = https://github.com/greyblake/vim-preview.git
-[submodule "home/.vim/bundle/commentary"]
-	path = home/.vim/bundle/commentary
-	url = https://github.com/tpope/vim-commentary.git
-[submodule "home/.vim/bundle/cvim"]
-	path = home/.vim/bundle/cvim
-	url = https://github.com/vim-scripts/c.vim.git
