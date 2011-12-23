@@ -8,3 +8,6 @@ fi
 # GVIM
 # Fix problem with GVim not registering with Ubuntu Menu
 gvim() { /usr/bin/gvim -f "$@" & true; }
+subl() { /usr/bin/sublime-text-2 "$@" & true; }
+
+export PAGER=less
