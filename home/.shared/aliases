@@ -29,3 +29,4 @@ alias pubkey="cat ~/.ssh/id_rsa.pub"
 alias blog="workon blog && foreman start"
 
 
+del () { /bin/mv -i ${*} ~/.Trash; }
