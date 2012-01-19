@@ -6,6 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
+ZSH_THEME="awesomepanda"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -33,11 +34,15 @@ plugins=(git svn mercurial)
 
 source $ZSH/oh-my-zsh.sh
 
+unsetopt correct_all
+
 # Customize to your needs...
 
 alias la="ls -a"
 # Color Man Pages (http://nion.modprobe.de/blog/archives/569-colored-manpages.html)
 alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man"
+
+export PATH=$PATH:/usr/local/bin/
 
 subl() { /usr/bin/sublime-text-2 "$@" & true; }
 gvim() { /usr/bin/gvim -f "$@" & true; }
