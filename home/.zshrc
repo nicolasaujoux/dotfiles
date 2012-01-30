@@ -36,6 +36,12 @@ source $ZSH/oh-my-zsh.sh
 
 unsetopt correct_all
 
+# Don't check git status
+parse_git_dirty() {
+    echo "$ZSH_THEME_GIT_PROMPT_CLEAN"
+}
+
+
 # Customize to your needs...
 
 alias la="ls -a"

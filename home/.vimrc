@@ -1,31 +1,67 @@
+""""""""""""""""""""""" PLUGINS
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'matchit.zip'
+Bundle 'The-NERD-Commenter'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'Command-T'
+Bundle 'kien/ctrlp.vim'
+Bundle 'ervandew/supertab'
+" Bundle 'msanders/snipmate'
+Bundle 'sjl/gundo.vim'
+
 set nocompatible
 
 set number
 set ruler
 syntax on
 
-" Map LEADER key to ,
-let mapleader = ','
+"""""""""""""""""""" GLOBAL
+let mapleader=","
+colorscheme molokai
+set gfn=terminus
+set go=
 
-" Set encoding
+syntax on
+filetype plugin indent on
 set encoding=utf-8
-
-" Whitespace stuff
+set hidden
+set showcmd
 set nowrap
+set backspace=indent,eol,start
 set autoindent
-set list listchars=tab:\ \ ,trail:·
-
-" Searching
-set hlsearch
-set incsearch
+set copyindent
+set number
+set shiftround
 set ignorecase
 set smartcase
+set hlsearch
+set incsearch
+set history=1000
+set undolevels=1000
+set wildignore=*.swp,*.bak
+set title
+set visualbell
+set noerrorbells
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
+set ttyfast
+set mouse=
+set nocompatible
+set backup
+set backupdir=~/.vim_backup
+set noswapfile
+set fileformats=unix,dos,mac
+set laststatus=2
+set expandtab
+set softtabstop=2 tabstop=2 shiftwidth=2
+set ruler
 
-" Use modeline overrides
-set modeline
-set modelines=10
 
-" Default color scheme
 syntax enable
 set background=dark
 " colorscheme solarized
@@ -39,12 +75,6 @@ set columns=95
 " Define FONT
 "set guifont=Mensch:h12
 set guifont=Inconsolata:h12
-
-" Show (partial) command in the status line
-set showcmd
-
-" Pathogen
-call pathogen#infect()
 
 " Command-T
 set wildignore+=*.o,*.obj,.git,*.pyc
@@ -105,35 +135,6 @@ autocmd FileType ruby
 " Gundo mapping
 nnoremap <F5> :GundoToggle<CR>
 
-
-" Status line {{{
-
-set statusline=%f    " Path.
-set statusline+=%m   " Modified flag.
-set statusline+=%r   " Readonly flag.
-set statusline+=%w   " Preview window flag.
-
-set statusline+=\    " Space.
-
-set statusline+=%#warningmsg#                " Highlight the following as a warning.
-set statusline+=%{SyntasticStatuslineFlag()} " Syntastic errors.
-set statusline+=%*                           " Reset highlighting.
-
-set statusline+=%=   " Right align.
-
-" File format, encoding and type.  Ex: "(unix/utf-8/python)"
-set statusline+=(
-set statusline+=%{&ff}                        " Format (unix/DOS).
-set statusline+=/
-set statusline+=%{strlen(&fenc)?&fenc:&enc}   " Encoding (utf-8).
-set statusline+=/
-set statusline+=%{&ft}                        " Type (python).
-set statusline+=)
-
-" Line and column position and counts.
-set statusline+=\ (line\ %l\/%L,\ col\ %03c)
-
-" }}}
 
 " Directories for swp files
 function! InitializeDirectories()
