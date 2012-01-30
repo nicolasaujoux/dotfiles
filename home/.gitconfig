@@ -1,6 +1,6 @@
 [user]
 	name = Bertrand Cachet
-	email = bertrand.cachet@heig-vd.ch
+	email = bertrand.cachet@gmail.com
 [github]
 	user =  bcachet
 [color]
@@ -9,7 +9,7 @@
 	status = auto
 [core]
 	excludesfile = /Users/bertrand/.gitignore
-	editor = vim
+	editor = /usr/bin/vim
 	quotepath = false
 [alias]
 	info = /usr/local/git/bin/git-info

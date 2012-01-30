@@ -39,11 +39,4 @@ alias la="ls -a"
 # Color Man Pages (http://nion.modprobe.de/blog/archives/569-colored-manpages.html)
 alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man"
 
-subl() { /usr/bin/sublime-text-2 "$@" & true; }
-gvim() { /usr/bin/gvim -f "$@" & true; }
-
-
-# Save a smiley to a local variable if the last command exited with success.
-local smiley="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}☹%{$reset_color%})"
-
-# PROMPT='${smiley} %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} $ %{$reset_color%}'
+export PATH="/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin"
