@@ -132,6 +132,16 @@ autocmd FileType ruby
     \    tabstop=4
     \    softtabstop=4
 
+"""""""""""""""""""" PLUGINS
+" PowerLine
+let g:Powerline_symbols = 'fancy'
+" CommantT
+let g:CommandTMaxFiles=5000
+let g:CommandTMaxHeight=12
+map <C-o> :CommandT<CR>
+let g:CommandTAcceptSelectionMap = '<CR>'
+let g:CommandTCancelMap = '<C-g>'
+
 " Gundo mapping
 nnoremap <F5> :GundoToggle<CR>
 

@@ -43,7 +43,7 @@ parse_git_dirty() {
 
 
 # Customize to your needs...
-
+alias ls="ls++"
 alias la="ls -a"
 # Color Man Pages (http://nion.modprobe.de/blog/archives/569-colored-manpages.html)
 alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man"
