@@ -13,6 +13,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 " Bundle 'msanders/snipmate'
 Bundle 'sjl/gundo.vim'
+Bundle 'vim-creole'
 
 set nocompatible
 
@@ -72,17 +73,17 @@ colorscheme molokai
 " set lines=55
 set columns=95
 
+set t_Co=256
+
 " Define FONT
 "set guifont=Mensch:h12
 set guifont=Inconsolata:h12
 
-" Command-T
-set wildignore+=*.o,*.obj,.git,*.pyc
-let g:CommandTMaxHeight = 15
+" EOL and Tabulation are displayed like TextMate
+:set listchars=tab:➜\ ,eol:¬
 
 " Line Width
 autocmd FileType rst,txt,md setlocal tw=79
-
 
 " TABS/SPACES for different filetype
 set sw=4
@@ -141,6 +142,7 @@ let g:CommandTMaxHeight=12
 map <C-o> :CommandT<CR>
 let g:CommandTAcceptSelectionMap = '<CR>'
 let g:CommandTCancelMap = '<C-g>'
+set wildignore+=*.o,*.obj,.git,*.pyc
 
 " Gundo mapping
 nnoremap <F5> :GundoToggle<CR>
