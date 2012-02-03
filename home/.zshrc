@@ -41,13 +41,14 @@ parse_git_dirty() {
     echo "$ZSH_THEME_GIT_PROMPT_CLEAN"
 }
 
-
 # Customize to your needs...
 #alias ls="ls++"
 alias la="ls -a"
+alias tmux="tmux -2" # to get 256 colors
+
 
 # Color Man Pages (http://nion.modprobe.de/blog/archives/569-colored-manpages.html)
-#alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man"
+alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man"
 
+# PATH Configuration
 export PATH="/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin"
-

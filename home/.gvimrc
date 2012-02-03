@@ -77,6 +77,7 @@ color molokai
 
 if has("gui_gtk2")
     set guifont=Inconsolata\ 13
+    set guifont=Monaco\ for\ Powerline\ 9
     set lines=60
 elseif has("gui_macvim")
 "    set guifont=Inconsolata:h13
