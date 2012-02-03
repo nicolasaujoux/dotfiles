@@ -68,6 +68,7 @@ set visualbell
 
 " Start without the toolbar
 set guioptions-=T
+set guioptions+=i
 
 " Default gui color scheme
 " color solarized
@@ -78,7 +79,8 @@ if has("gui_gtk2")
     set guifont=Inconsolata\ 13
     set lines=60
 elseif has("gui_macvim")
-    set guifont=Inconsolata:h13
+"    set guifont=Inconsolata:h13
+	set guifont=MonacoForPowerline:h12
 elseif has("gui_win32")
     set guifont=Inconsolata:h11
 end

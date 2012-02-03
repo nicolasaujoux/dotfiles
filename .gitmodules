@@ -1,15 +1,3 @@
-[submodule "home/.vim/bundle/supertab"]
-	path = home/.vim/bundle/supertab
-	url = https://github.com/ervandew/supertab.git
-[submodule "home/.vim/bundle/snipmate"]
-	path = home/.vim/bundle/snipmate
-	url = https://github.com/msanders/snipmate.vim.git
-[submodule "home/.vim/bundle/command-t"]
-	path = home/.vim/bundle/command-t
-	url = https://github.com/wincent/Command-T.git
-[submodule "home/.vim/bundle/ctrlp"]
-	path = home/.vim/bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim
-[submodule "home/.vim/bundle/gundo"]
-	path = home/.vim/bundle/gundo
-	url = http://github.com/sjl/gundo.vim.git
+[submodule "home/.vim/bundle/vundle"]
+	path = home/.vim/bundle/vundle
+	url = http://github.com/gmarik/vundle.git
