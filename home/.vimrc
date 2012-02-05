@@ -13,7 +13,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'snipMate'
 Bundle 'sjl/gundo.vim'
-Bundle 'vim-creole'
 
 set nocompatible
 
@@ -79,6 +78,9 @@ set guifont=MenloForPowerline:h12
 " EOL and Tabulation are displayed like TextMate
 :set listchars=tab:➜\ ,eol:¬
 
+" Associate some file extension to specific syntax
+au BufNewFile,BufRead *.rst set syntax=rest
+
 " Line Width
 autocmd FileType rst,txt,md setlocal tw=79
 
@@ -140,6 +142,16 @@ map <C-o> :CommandT<CR>
 let g:CommandTAcceptSelectionMap = '<CR>'
 let g:CommandTCancelMap = '<C-g>'
 set wildignore+=*.o,*.obj,.git,*.pyc
+" ctrlp
+let g:ctrlp_map = '<c-p>'
+" the nearest ancestor that contains one of these directories or files: .git,
+" .hg, .bzr, _darcs, root.dir
+let g:ctrlp_working_path_mode = 2
+" We want to exclude directories or files from the search
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|build$',
+  \ }
+"set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/build/*   " for Linux/MacOSX
 
 " Gundo mapping
 nnoremap <F5> :GundoToggle<CR>
