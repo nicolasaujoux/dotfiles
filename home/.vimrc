@@ -11,7 +11,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'Command-T'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
-" Bundle 'msanders/snipmate'
+Bundle 'snipMate'
 Bundle 'sjl/gundo.vim'
 Bundle 'vim-creole'
 
@@ -65,19 +65,15 @@ set ruler
 
 syntax enable
 set background=dark
-" colorscheme solarized
-" colorscheme Tomorrow-Night
 colorscheme molokai
 
 " Window Size
-" set lines=55
 set columns=95
 
 set t_Co=256
 
 " Define FONT
 "set guifont=Mensch:h12
-set guifont=Inconsolata:h12
 set guifont=MenloForPowerline:h12
 
 " EOL and Tabulation are displayed like TextMate
@@ -110,25 +106,25 @@ autocmd FileType ruby
     \    tabstop=2
     \    softtabstop=2
     
-    autocmd BufEnter *.yml
+autocmd BufEnter *.yml
     \    setlocal expandtab
     \    shiftwidth=2
     \    tabstop=2
     \    softtabstop=2
     
-    autocmd FileType xml
+autocmd FileType xml
     \    setlocal expandtab
     \    shiftwidth=4
     \    tabstop=4
     \    softtabstop=4
     
-    autocmd FileType html
+autocmd FileType html
     \    setlocal expandtab
     \    shiftwidth=4
     \    tabstop=4
     \    softtabstop=4
     
-    autocmd BufEnter *.css
+autocmd BufEnter *.css
     \    setlocal expandtab
     \    shiftwidth=4
     \    tabstop=4
