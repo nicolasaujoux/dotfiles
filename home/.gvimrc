@@ -76,14 +76,16 @@ set guioptions+=i
 color molokai
 
 if has("gui_gtk2")
-    set guifont=Inconsolata\ 13
-    set guifont=Monaco\ for\ Powerline\ 9
-    set lines=60
+	set guifont=Inconsolata\ 13
+	set guifont=Monaco\ for\ Powerline\ 11
+	set lines=60
 elseif has("gui_macvim")
 "    set guifont=Inconsolata:h13
 	set guifont=MonacoForPowerline:h12
+	set lines=50
+	set columns=90
 elseif has("gui_win32")
-    set guifont=Inconsolata:h11
+	set guifont=Inconsolata:h11
 end
 " Transparency
 " set transparency=1

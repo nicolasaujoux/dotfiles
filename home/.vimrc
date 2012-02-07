@@ -7,12 +7,14 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'matchit.zip'
 Bundle 'The-NERD-Commenter'
+Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'Command-T'
+"Bundle 'Command-T'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'snipMate'
-Bundle 'sjl/gundo.vim'
+"Bundle 'sjl/gundo.vim'
+Bundle 'creole.vim'
 
 set nocompatible
 
@@ -93,6 +95,9 @@ set noexpandtab
 " Do not touch tabs in Makefile
 autocmd FileType make setlocal noexpandtab
 
+" wiki files are in fact creole
+autocmd BufEnter *.wiki set filetype=creole
+
 autocmd BufEnter *.py set ai sw=4 ts=4 sta et fo=croql
 
 autocmd FileType c,cpp,objc,java,php,javascript
@@ -146,11 +151,11 @@ set wildignore+=*.o,*.obj,.git,*.pyc
 let g:ctrlp_map = '<c-p>'
 " the nearest ancestor that contains one of these directories or files: .git,
 " .hg, .bzr, _darcs, root.dir
-let g:ctrlp_working_path_mode = 2
+let g:ctrlp_working_path_mode = 0
 " We want to exclude directories or files from the search
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|build$',
-  \ }
+  \ 'file': '\.gitignore\|\.DS_Store' }
 "set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/build/*   " for Linux/MacOSX
 
 " Gundo mapping
