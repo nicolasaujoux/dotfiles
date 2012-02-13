@@ -36,9 +36,19 @@ source $ZSH/oh-my-zsh.sh
 
 unsetopt correct_all
 
+# ZSH CONFIGURATION
+# Remember about a years worth of history (AWESOME)
+SAVEHIST=10000
+HISTSIZE=10000
+
 # Don't check git status
 parse_git_dirty() {
     echo "$ZSH_THEME_GIT_PROMPT_CLEAN"
+}
+
+automate_ssh_authentication() {
+eval `ssh-agent`
+ssh-add ~/.ssh/id_rsa
 }
 
 # Customize to your needs...

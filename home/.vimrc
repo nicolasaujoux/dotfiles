@@ -5,15 +5,13 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'matchit.zip'
 Bundle 'The-NERD-Commenter'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
-"Bundle 'Command-T'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'snipMate'
-"Bundle 'sjl/gundo.vim'
+Bundle 'sjl/gundo.vim'
 Bundle 'creole.vim'
 
 set nocompatible
@@ -84,7 +82,7 @@ set guifont=MenloForPowerline:h12
 au BufNewFile,BufRead *.rst set syntax=rest
 
 " Line Width
-autocmd FileType rst,txt,md setlocal tw=79
+autocmd FileType rst,txt,md,wiki,creole setlocal tw=79
 
 " TABS/SPACES for different filetype
 set sw=4
@@ -154,7 +152,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_working_path_mode = 0
 " We want to exclude directories or files from the search
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|build$',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|build$\|\.sass-cache$',
   \ 'file': '\.gitignore\|\.DS_Store' }
 "set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/build/*   " for Linux/MacOSX
 
