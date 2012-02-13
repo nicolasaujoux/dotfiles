@@ -96,6 +96,8 @@ autocmd FileType make setlocal noexpandtab
 " wiki files are in fact creole
 autocmd BufEnter *.wiki set filetype=creole
 
+autocmd BufEnter README set filetype=rst
+
 autocmd BufEnter *.py set ai sw=4 ts=4 sta et fo=croql
 
 autocmd FileType c,cpp,objc,java,php,javascript
