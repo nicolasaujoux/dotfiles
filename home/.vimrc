@@ -13,6 +13,7 @@ Bundle 'ervandew/supertab'
 Bundle 'snipMate'
 Bundle 'sjl/gundo.vim'
 Bundle 'creole.vim'
+Bundle 'taglist.vim'
 
 set nocompatible
 
@@ -160,6 +161,11 @@ let g:ctrlp_custom_ignore = {
 
 " Gundo mapping
 nnoremap <F5> :GundoToggle<CR>
+
+" Searching doesn't highligh search
+set nohlsearch          " turn off highlight searches, but:
+                        " Turn hlsearch off/on with CTRL-N
+:map <silent> <C-N> :se invhlsearch<CR>
 
 
 " Directories for swp files
