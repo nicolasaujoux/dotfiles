@@ -147,7 +147,7 @@ let g:CommandTMaxHeight=12
 map <C-o> :CommandT<CR>
 let g:CommandTAcceptSelectionMap = '<CR>'
 let g:CommandTCancelMap = '<C-g>'
-set wildignore+=*.o,*.obj,.git,*.pyc
+set wildignore+=*.o,*.obj,.git,*.pyc,*.so
 " ctrlp
 let g:ctrlp_map = '<c-p>'
 " the nearest ancestor that contains one of these directories or files: .git,
@@ -155,7 +155,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_working_path_mode = 0
 " We want to exclude directories or files from the search
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|build$\|\.sass-cache$',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|build$\|\.sass-cache$\|toolchains$',
   \ 'file': '\.gitignore\|\.DS_Store' }
 "set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/build/*   " for Linux/MacOSX
 

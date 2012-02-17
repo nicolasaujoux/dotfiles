@@ -56,6 +56,8 @@ ssh-add ~/.ssh/id_rsa
 alias la="ls -a"
 alias tmux="tmux -2" # to get 256 colors
 
+alias rake='noglob rake'
+
 
 # Color Man Pages (http://nion.modprobe.de/blog/archives/569-colored-manpages.html)
 alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man"
