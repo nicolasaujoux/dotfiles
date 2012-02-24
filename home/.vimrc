@@ -83,7 +83,9 @@ set guifont=MenloForPowerline:h12
 au BufNewFile,BufRead *.rst set syntax=rest
 
 " Line Width
-autocmd FileType rst,txt,md,wiki,creole setlocal tw=79
+autocmd FileType rst,txt,md,wiki,creole setlocal tw=80
+
+set wrap
 
 " TABS/SPACES for different filetype
 set sw=4
