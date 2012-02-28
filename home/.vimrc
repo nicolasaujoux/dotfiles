@@ -144,12 +144,6 @@ autocmd BufEnter *.css
 """""""""""""""""""" PLUGINS
 " PowerLine
 let g:Powerline_symbols = 'fancy'
-" CommantT
-let g:CommandTMaxFiles=5000
-let g:CommandTMaxHeight=12
-map <C-o> :CommandT<CR>
-let g:CommandTAcceptSelectionMap = '<CR>'
-let g:CommandTCancelMap = '<C-g>'
 set wildignore+=*.o,*.obj,.git,*.pyc,*.so
 " ctrlp
 let g:ctrlp_map = '<c-p>'
@@ -158,12 +152,14 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_working_path_mode = 0
 " We want to exclude directories or files from the search
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|build$\|\.sass-cache$\|toolchains$',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|build$\|\.sass-cache$\|toolchains\|vendor$',
   \ 'file': '\.gitignore\|\.DS_Store' }
 "set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/build/*   " for Linux/MacOSX
 
 " Gundo mapping
 nnoremap <F5> :GundoToggle<CR>
+
+nnoremap <Leader>t :NERDTree<CR>
 
 " Searching doesn't highligh search
 set nohlsearch          " turn off highlight searches, but:
