@@ -144,15 +144,10 @@ autocmd BufEnter *.css
 """""""""""""""""""" PLUGINS
 " PowerLine
 let g:Powerline_symbols = 'fancy'
-" CommantT
-let g:CommandTMaxFiles=5000
-let g:CommandTMaxHeight=12
-map <C-o> :CommandT<CR>
-let g:CommandTAcceptSelectionMap = '<CR>'
-let g:CommandTCancelMap = '<C-g>'
 set wildignore+=*.o,*.obj,.git,*.pyc,*.so
 " ctrlp
 let g:ctrlp_map = '<c-p>'
+nnoremap <C-F> :CtrlPCurFile<CR>
 " the nearest ancestor that contains one of these directories or files: .git,
 " .hg, .bzr, _darcs, root.dir
 let g:ctrlp_working_path_mode = 0

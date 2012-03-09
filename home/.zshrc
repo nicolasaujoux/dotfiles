@@ -58,6 +58,9 @@ alias tmux="tmux -2" # to get 256 colors
 # Because without this line, some rake commands crash in ZSH
 alias rake='noglob rake'
 
+alias edit='gvim'
+alias e='edit'
+
 
 # PATH Configuration
 export PATH="/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin"
