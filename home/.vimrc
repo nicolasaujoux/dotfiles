@@ -86,13 +86,15 @@ au BufNewFile,BufRead *.rst set syntax=rest
 " Line Width
 autocmd FileType rst,txt,md,wiki,creole setlocal tw=80
 
+au BufNewFile,BufRead SConstruct,SConscript set filetype=python
+
 set wrap
 
 " TABS/SPACES for different filetype
-set sw=4
-set st=4
-set ts=4
-set noexpandtab
+set sw=2
+set st=2
+set ts=2
+set expandtab
 
 " Do not touch tabs in Makefile
 autocmd FileType make setlocal noexpandtab
@@ -107,9 +109,15 @@ autocmd BufEnter *.py set ai sw=4 ts=4 sta et fo=croql
 autocmd FileType c,cpp,objc,java,php,javascript
     \    setlocal formatoptions=croql cindent
     \    comments=sr:/*,mb:*,ex:*/,://
-    \    shiftwidth=4
-    \    tabstop=4
-    \    softtabstop=4
+    \    shiftwidth=2
+    \    tabstop=2
+    \    softtabstop=2
+    \    textwidth=80
+    \    wrap
+    \    expandtab
+    \    cindent
+    \    cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4
+
 
 autocmd FileType ruby
     \    setlocal expandtab
