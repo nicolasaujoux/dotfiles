@@ -41,6 +41,9 @@ unsetopt correct_all
 SAVEHIST=10000
 HISTSIZE=10000
 
+# History distinct in each terminal
+setopt no_share_history
+
 # Don't check git status
 parse_git_dirty() {
     echo "$ZSH_THEME_GIT_PROMPT_CLEAN"
