@@ -64,6 +64,22 @@ alias rake='noglob rake'
 alias edit='gvim'
 alias e='edit'
 
+alias pubkey="cat ~/.ssh/id_rsa.pub"
+
+OS_NAME=`uname -s`
+
+if [[ $OS_NAME == "Linux" ]]; then
+  TRASH_PATH=~/.local/share/Trash/files
+  SUBL_BIN=/usr/local/bin/sublime_text
+else
+  TRASH_PATH=~/.Trash/
+  SUBL_BIN=/usr/local/bin/sublime_text
+fi
+
+subl() { $SUBL_BIN "$@" & true; }
+del() { mv "$@" $TRASH_PATH ; }
 
 # PATH Configuration
 export PATH="/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin"
+
+
