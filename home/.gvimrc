@@ -59,13 +59,8 @@ endif
 set visualbell
 
 " Start without the toolbar
-set guioptions-=T
-set guioptions+=i
-
-" Default gui color scheme
-" color solarized
-" color Tomorrow-Night
-color molokai
+" set guioptions-=T
+" set guioptions+=i
 
 if has("gui_gtk2")
 	set guifont=Inconsolata\ 13
@@ -79,6 +74,7 @@ elseif has("gui_macvim")
 elseif has("gui_win32")
 	set guifont=Inconsolata:h11
 end
+
 " Transparency
 " set transparency=1
 
@@ -86,8 +82,4 @@ end
 set guioptions+=lrb
 set guioptions-=lrb
 
-" Include user's local vim config
-if filereadable(expand("~/.gvimrc.local"))
-  source ~/.gvimrc.local
-endif
 
