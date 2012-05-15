@@ -1,4 +1,2 @@
-home/.vim/.netrwhist
-
 home/.vim/bundle/*
 !home/.vim/bundle/vundle
