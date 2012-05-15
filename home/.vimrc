@@ -20,7 +20,7 @@ Bundle 'mileszs/ack.vim'
 " Display tags in a window, ordered by class
 Bundle 'majutsushi/tagbar' 
  " Align comments, declarations, statements
-Bundle 'tpope/vim-align'
+Bundle 'tsaleh/vim-align'
 " Git support
 Bundle 'tpope/vim-fugitive' 
 " Quoting/parenthesing made simple
@@ -32,7 +32,7 @@ Bundle 'scrooloose/nerdcommenter'
 " Tree explorer plugin
 Bundle 'scrooloose/nerdtree' 
 " Syntax checking
-Bundle 'scrooloose/syntastic' 
+" Bundle 'scrooloose/syntastic' 
 " Powered status line
 Bundle 'Lokaltog/vim-powerline' 
 " Snippets
@@ -49,6 +49,8 @@ Bundle 'ervandew/supertab'
 Bundle 'taglist.vim'
 " Generate HTML from Markup language
 Bundle 'zaiste/hammer.vim'
+" C/C++ auto completion based on CLang
+Bundle 'clang-complete'
 " Colorschemes {{{
 Bundle 'sjl/badwolf'
 Bundle 'altercation/vim-colors-solarized'
@@ -109,7 +111,13 @@ set autoread
 set backspace=indent,eol,start
 set binary
 set cinoptions=:0,(s,u0,U1,g0,t0
-set completeopt=menuone,preview
+" Complete options (disable preview scratch window)
+set completeopt=menu,menuone,longest
+" close it on movement in insert mode or when leaving
+" insert mode
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+set pumheight=15
 set hidden 
 set history=1000
 set incsearch 
@@ -153,7 +161,6 @@ set softtabstop=4
 set expandtab
 set wrap 
 set formatoptions=qrn1
-set colorcolumn=+1
 " }}}
 
 set visualbell 
@@ -411,8 +418,6 @@ vmap <leader># :call NERDComment(0, "invert")<cr>
 nmap <leader>t :TagbarToggle<CR>
 " }}}
 
-" Fugitive
-
 " vim-indentobject {{{
 let g:indentobject_meaningful_indentation = ["haml", "sass", "python", "yaml", "markdown"]
 " }}}
@@ -420,6 +425,19 @@ let g:indentobject_meaningful_indentation = ["haml", "sass", "python", "yaml", "
 " Hammer {{{
 nmap <leader>p :Hammer<cr>
 " }}}
+
+" SuperTab {{{
+" SuperTab option for context aware completion
+ let g:SuperTabDefaultCompletionType = "context"
+" }}}
+
+" Clang-complete {{{
+" Disable auto popup, use <Tab> to autocomplete
+ let g:clang_complete_auto = 0
+ " Show clang errors in the quickfix window
+ let g:clang_complete_copen = 0
+" }}}
+"
 " }}}
 
 " Extensions {{{

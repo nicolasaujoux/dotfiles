@@ -59,11 +59,11 @@ endif
 set visualbell
 
 " Start without the toolbar
-" set guioptions-=T
-" set guioptions+=i
+set guioptions-=T
+set guioptions+=i
 
 if has("gui_gtk2")
-	set guifont=Inconsolata\ 13
+"	set guifont=Inconsolata\ 13
 	set guifont=Monaco\ for\ Powerline\ 10
 	set lines=60
 elseif has("gui_macvim")
