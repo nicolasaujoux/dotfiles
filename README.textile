@@ -7,5 +7,8 @@ Install with the following commands:
 gem install homesick
 homesick clone bcachet/dotfiles
 homesick symlink dotfiles
+cd .homesick/bcachet/dotfiles
+git submodule update --init
+vim +BundleInstall +qall
 </code>
 </pre>
