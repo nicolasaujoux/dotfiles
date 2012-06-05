@@ -1,13 +1,13 @@
 [user]
-	name = Bertrand Cachet
-	email = bertrand.cachet@gmail.com
+	name = Nicolas Aujoux
+	email = nicolas.aujoux@gmail.com
 [github]
-	user =  bcachet
+	user =  nicolasaujoux
 [color]
 	branch = auto
 	diff = auto
 	status = auto
 [core]
-	excludesfile = /Users/bertrand/.gitignore
+	excludesfile = /Users/nico/.gitignore
 	editor = /usr/bin/vim
 	quotepath = false

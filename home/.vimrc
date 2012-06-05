@@ -51,6 +51,8 @@ Bundle 'taglist.vim'
 Bundle 'zaiste/hammer.vim'
 " C/C++ auto completion based on CLang
 Bundle 'clang-complete'
+" Latex plugin
+Bundle 'vimlatex'
 " Colorschemes {{{
 Bundle 'sjl/badwolf'
 Bundle 'altercation/vim-colors-solarized'

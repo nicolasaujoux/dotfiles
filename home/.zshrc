@@ -70,7 +70,7 @@ OS_NAME=`uname -s`
 
 if [[ $OS_NAME == "Linux" ]]; then
   TRASH_PATH=~/.local/share/Trash/files
-  SUBL_BIN=/usr/local/bin/sublime_text
+  SUBL_BIN=/usr/bin/sublime-text-2
 elif [[ $OS_NAME == "Darwin" ]] then
   TRASH_PATH=~/.Trash/
   SUBL_BIN=/usr/local/bin/subl
