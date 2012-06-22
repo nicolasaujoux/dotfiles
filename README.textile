@@ -5,9 +5,9 @@ Install with the following commands:
 <pre>
 <code>
 gem install homesick
-homesick clone bcachet/dotfiles
+homesick clone nicolasaujoux/dotfiles
 homesick symlink dotfiles
-cd .homesick/bcachet/dotfiles
+cd .homesick/nicolasaujoux/dotfiles
 git submodule update --init
 vim +BundleInstall +qall
 </code>
