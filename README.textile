@@ -12,3 +12,10 @@ git submodule update --init
 vim +BundleInstall +qall
 </code>
 </pre>
+
+To update the plugins, type in vim :
+<pre>
+<code>
+:BundleInstall!
+<code>
+<pre>
