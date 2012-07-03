@@ -13,7 +13,4 @@ vim +BundleInstall +qall
 </code>
 </pre>
 
-To update the plugins, type in vim :
-<code>
-:BundleInstall!
-<code>
+To update the plugins, type in vim : ':BundleInstall!'
