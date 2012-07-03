@@ -104,7 +104,7 @@ nmap ; :<CR>
 
 " Abbrevs {{{
 "
-iabbrev b@ bertrand.cachet@gmail.com
+iabbrev n@ nicolas.aujoux@gmail.com
 
 " . }}}
 
@@ -422,6 +422,10 @@ nmap <leader>t :TagbarToggle<CR>
 
 " vim-indentobject {{{
 let g:indentobject_meaningful_indentation = ["haml", "sass", "python", "yaml", "markdown"]
+" }}}
+
+" gundo {{{
+nnoremap <F5> :GundoToggle<CR>
 " }}}
 
 " Hammer {{{
