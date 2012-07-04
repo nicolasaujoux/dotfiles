@@ -57,6 +57,8 @@ Bundle 'vimlatex'
 Bundle 'SearchComplete'
 " Close a buffer without closing the window
 Bundle 'rbgrouleff/bclose.vim'
+" Highlights markdown files
+Bundle 'Markdown'
 
 " Colorschemes {{{
 Bundle 'sjl/badwolf'
