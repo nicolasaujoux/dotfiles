@@ -1,6 +1,10 @@
 Quick reference for plugins use
 ===============================
 
+relative line (not a plugin)
+-------------
+Just type ':set rnu' to activate and ':set nu' to desactivate
+
 ctrlp.vim
 ---------
 Press '<c-p>' to find a file 
