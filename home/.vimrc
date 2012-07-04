@@ -53,6 +53,11 @@ Bundle 'zaiste/hammer.vim'
 Bundle 'clang-complete'
 " Latex plugin
 Bundle 'vimlatex'
+" Tab completion in search mode
+Bundle 'SearchComplete'
+" Close a buffer without closing the window
+Bundle 'rbgrouleff/bclose.vim'
+
 " Colorschemes {{{
 Bundle 'sjl/badwolf'
 Bundle 'altercation/vim-colors-solarized'

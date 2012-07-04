@@ -63,11 +63,11 @@ set guioptions-=T
 set guioptions+=i
 
 if has("gui_gtk2")
-"	set guifont=Inconsolata\ 13
+"set guifont=Inconsolata\ 10
 	set guifont=Monaco\ for\ Powerline\ 10
 	set lines=60
 elseif has("gui_macvim")
-"    set guifont=Inconsolata:h13
+    set guifont=Inconsolata:h13
 	set guifont=MonacoForPowerline:h12
 	set lines=50
 	set columns=90

@@ -31,3 +31,8 @@ taglist.vim
 -----------
 Source code browser plugin. Type ':Tlist' to display all the functions,
 variables ... in a code file
+
+bclose.vim
+----------
+':Bclose' to close the buffer in the current window without deleting the window
+':Bclose N' to close the N buffer
